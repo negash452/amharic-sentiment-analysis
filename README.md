@@ -34,68 +34,8 @@ The Amharic language is one of the low-resource languages and there have been so
 
 In order to successfully implement this project, I will do more research on NLP models, measuring and improving accuracy of NLP models. I will be using Google Colab notebook for running my model with GPU runtime.
 
-# Articles and Research Papers
 
-## Research Papers
 
-[https://www.aclweb.org/anthology/2020.coling-main.91.pdf](https://www.aclweb.org/anthology/2020.coling-main.91.pdf)
-
-[https://www.hilcoe.net/wp-content/uploads/2020/08/V2N2Paper12.pdf](https://www.hilcoe.net/wp-content/uploads/2020/08/V2N2Paper12.pdf)
-
-[http://etd.aau.edu.et/bitstream/handle/123456789/3029/Selama Gebremeskel.pdf?sequence=1&isAllowed=y](http://etd.aau.edu.et/bitstream/handle/123456789/3029/Selama%20Gebremeskel.pdf?sequence=1&isAllowed=y)
-
-[https://arxiv.org/pdf/2104.02516v1.pdf](https://arxiv.org/pdf/2104.02516v1.pdf)
-
-[https://www.researchgate.net/publication/331673959_DEEP_LEARNING_APPROACH_FOR_AMHARIC_SENTIMENT_ANALYSIS_UNIVERSITY_OF_GONDAR](https://www.researchgate.net/publication/331673959_DEEP_LEARNING_APPROACH_FOR_AMHARIC_SENTIMENT_ANALYSIS_UNIVERSITY_OF_GONDAR)
-
-### Summary #1
-
-Research: [https://www.aclweb.org/anthology/2020.coling-main.91.pdf](https://www.aclweb.org/anthology/2020.coling-main.91.pdf)
-
-This research focused on the development of an annotation tool for Amharic tweets and the sentiment analysis for the data gathered. Since the annotation tools that already exist don't support Amharic, they made a user-friendly annotation tool using a telegram bot. They used this bot to annotate each tweet. Each tweet is annotated by 3 different telegram users. The 3 choices to annotate was Positive, Negative or Neutral. They then used different deep learning text classifiers and supervised classifiers. Their research shows FLAIR deep learning model outperforms the other models that they've experimented on.
-
-### Summary #2
-
-Research: [https://www.hilcoe.net/wp-content/uploads/2020/08/V2N2Paper12.pdf](https://www.hilcoe.net/wp-content/uploads/2020/08/V2N2Paper12.pdf)
-
-They used SVM model to classify Amharic online posts as Positive or Negative. Because of its morphological complexity of Amharic, it was difficult to find data to work with. The preprocessing included converting the transliteration from Latin to Ethiopic, manually annotating the corpus using polarity scales instead of binary values of Positive and Negative. The scaling values were integers from -2 up to +2. -2 being more negative and +2 being more positive. A value of 0 is neutral. They also had to change words to their base form by removing the inflectional morphemes. For this, they used a python tool called [HornMorpho](https://github.com/hltdi/HornMorpho) that converts a given word into its morphological analysis form. They used the Naïve Bayes machine learning algorithm and used unigram, bigram, and hybrid variants as features. 
-
-### Summary #3
-
-Research: [http://etd.aau.edu.et/bitstream/handle/123456789/3029/Selama Gebremeskel.pdf?sequence=1&isAllowed=y](http://etd.aau.edu.et/bitstream/handle/123456789/3029/Selama%20Gebremeskel.pdf?sequence=1&isAllowed=y)
-
-This research work has tried to go through the techniques of sentiment mining for opinionated
-Amharic texts. To classify a given opinionated document or text into predefined classes, the
-opinionated document passes through pre-processing, detection of sentiment words, weight
-assignment and polarity classification processes. Pre-processing involves normalization and
-tokenization. The detection of sentiment words is a process of detecting polarity words and
-contextual valence shifters based on the sentiment lexicon. Weight assignment and polarity
-propagation is responsible for assigning an initial weight for detected sentiment terms and
-propagating polarity value of sentiment terms that are linked to contextual valence shifters. (pg 66)
-
-### Summary #4
-
-Research: [https://arxiv.org/pdf/2104.02516v1.pdf](https://arxiv.org/pdf/2104.02516v1.pdf)
-
-This project focused on 3 things. 
-
-1, incentivized the crowd-sourcing, collection and curation of language datasets through an online quantitative and qualitative challenge
-
-2, supported research fellows for a period of 3-4 months to create datasets annotated for NLP tasks
-
-3,  hosted competitive Machine Learning challenges on the basis of these datasets
-
-It explains due to the low-resource of African languages, Africa has been left out of NLP advancement. And the project aims to help in increasing resources for African languages.
-
-### Summary #5
-
-Research: [https://www.researchgate.net/publication/331673959_DEEP_LEARNING_APPROACH_FOR_AMHARIC_SENTIMENT_ANALYSIS_UNIVERSITY_OF_GONDAR](https://www.researchgate.net/publication/331673959_DEEP_LEARNING_APPROACH_FOR_AMHARIC_SENTIMENT_ANALYSIS_UNIVERSITY_OF_GONDAR)
-
-The two researchers in this research extracted data from Fana Broadcasting Corporation (FBC) facebook page. They chose FBC media because it's one of the top media services in Ethiopia and it covers social, economical, and political subjects. They used manual annotation for each post which was annotated by linguistic experts. They used a similar technique as Summary#2 where instead of classifying posts in binary as positive or negative, they had seven classes ranging from extremely negative to extremely positive. They also had a table that summarized what tools, models, classes, features, etc. other researchers have used which was very helpful to review. They did 3 different experiments. The dataset size they used for the first two was 600 and the third one was 1000. Their experiment and research were fairly different from the rest because they put emoji into consideration when annotating each post. The highest score that they were able to achieve was an approximately 96% and that was on their first experiment. 
-
-## Articles
-
-### Summary #6
 
 [https://towardsdatascience.com/sentiment-analysis-for-low-resourced-languages-on-social-media-128bf01f2547](https://towardsdatascience.com/sentiment-analysis-for-low-resourced-languages-on-social-media-128bf01f2547)
 
